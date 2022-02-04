@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+    background-color: #89b3fa;
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d0854ec;
+}
+
+#sqr1, #sqr2, #sqr3 {
+    display: none;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #00000040;
+    border: 1px solid gray;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.square:hover {
+    background-color: #00000051;
+}
+
+.o {
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\2663";
+    font-size: 70px;
+    color: #3e3838;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\2666";
+    font-size: 70px;
+    color: #bb1616;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    display: none;
+}
+
+#clean, #newGame {
+    background-color: #1d0854d2;
+    border: 1px solid grey;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5%;
+    cursor: pointer;
+    display: none;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+#clean:hover {
+    background-color: #1d0854ec;
+    padding: 5px;
+}
+
+.playerName {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    padding: 8px;
+    width: 180px;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.black{
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.black::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.red::placeholder {
+    color: red;
+    opacity: 0.7;
+}
+
+.play {
+    padding: 8px;
+    width: 55px;
+    background-color: #1d0854d2;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.play:hover {
+    background-color: #1d0854ec;
+    padding: 6px;
+}
+
+@media (max-width: 768px) {
+
+    input, .play {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input {
+        width: 100px;
+    }
+    .play {
+        width: 55px;
+    }
+}
